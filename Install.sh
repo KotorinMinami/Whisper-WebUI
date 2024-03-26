@@ -6,7 +6,7 @@ if [ ! -d "venv" ]; then
 fi
 
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.mirrors.tuna.tsinghua.edu.cn/simple
 
 if [ $? -ne 0 ]; then
     echo ""
